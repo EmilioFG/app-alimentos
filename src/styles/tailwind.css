@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+.root,
+#root,
+#docs-root {
+  --primary: #2B8C44;
+  --secondary: #012611;
+  --green: #107329;
+  --ligth-green: #A8BFAA;
+  --red: #8C0813;
+  --blue: #023E73;
+  --yellow: #F2BC1B;
+  --dark: #070606;
+  --white: #F2F2F2;
+  --transparent: rgba(0, 0, 0, 0.1);
+  --gray: #7575757d;
+}
