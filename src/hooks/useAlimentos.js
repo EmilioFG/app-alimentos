@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getAlimentos, getAlimentosByName } from '../api/alimentos';
 
 
+
 export const useAlimentos = () => {
   const [alimentos, setAlimentos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
