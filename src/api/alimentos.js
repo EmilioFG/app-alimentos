@@ -2,6 +2,9 @@ import axios from 'axios';
 
 import CONFIG from '../config';
 
+import { Notification } from '../components/ui/notification';
+
+
 export const getAlimentos = async () => {
   try {
     const { data } = await axios.get(
@@ -11,6 +14,7 @@ export const getAlimentos = async () => {
 
     return data;
   } catch (error) {
+    Notification(error, 'error');
     throw error;
   }
 }
@@ -24,6 +28,7 @@ export const getAlimentosByName = async (nombre) => {
 
     return data;
   } catch (error) {
+    Notification(error, 'error');
     throw error;
   }
 }
