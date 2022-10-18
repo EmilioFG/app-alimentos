@@ -1,11 +1,48 @@
-import { GridAlimentos } from './components/grid-alimentos';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
+
+import { ToastContainer } from 'react-toastify';
+
+import { Home, Alimento, GridAlimentos } from './components';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
   return (
-    <GridAlimentos />
+    <Router>
+      <main>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={<Home />}
+          />
+          <Route
+            exact
+            path="/alimento/:id"
+            element={<Alimento />}
+          />
+          <Route
+            exact
+            path="/alimentos"
+            element={<GridAlimentos />}
+          />
+          <Route
+            path="*"
+            element={
+              <Navigate to="/" />
+            }
+          />
+        </Routes>
+      </main>
+      <ToastContainer />
+    </Router>
   );
 }
-
 
 export default App;

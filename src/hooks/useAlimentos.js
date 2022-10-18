@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
 
-import { getAlimentos, getAlimentosByName } from '../api/alimentos';
+import { getAlimentos, getAlimentosByName, getAlimentoById } from '../api/alimentos';
 
 
-export const useAlimentos = () => {
+
+export const useAlimentos = (id) => {
   const [alimentos, setAlimentos] = useState([]);
+  const [alimento, setAlimento] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    get();
-  }, []);
+    !id ? get() : getById(id);
+  }, [id]);
+
 
   const get = async () => {
     const response = await getAlimentos();
@@ -29,8 +32,16 @@ export const useAlimentos = () => {
     setIsLoading(false);
   }
 
+  const getById = async (id) => {
+    const response = await getAlimentoById(id);
+    setAlimento(response);
+    setIsLoading(false);
+  }
+
+
   return {
     alimentos,
+    alimento,
     isLoading,
     getByName,
   }

@@ -12,6 +12,7 @@ module.exports = {
           'green': 'var(--green)',
           'ligth-green': 'var(--ligth-green)',
           'red': 'var(--red)',
+          'ligth-red': 'var(--ligth-red)',
           'blue': 'var(--blue)',
           'yellow': 'var(--yellow)',
           'dark': 'var(--dark)',
@@ -27,6 +28,7 @@ module.exports = {
           'green': 'var(--green)',
           'ligth-green': 'var(--ligth-green)',
           'red': 'var(--red)',
+          'ligth-red': 'var(--ligth-red)',
           'blue': 'var(--blue)',
           'yellow': 'var(--yellow)',
           'dark': 'var(--dark)',
@@ -39,5 +41,6 @@ module.exports = {
   },
   plugins: [
     require('flowbite/plugin'),
+    require('flowbite-typography'),
   ],
 }
