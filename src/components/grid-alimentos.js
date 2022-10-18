@@ -37,11 +37,11 @@ export const GridAlimentos = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-14 px-4 py-3">
         {alimentos.map((alimento) => (
-          <Link to={{
-            pathname: `/alimento/${alimento.id}`,
-          }}>
+          <Link
+            to={{ pathname: `/alimento/${alimento.id}` }}
+            key={alimento.id}
+          >
             <div
-              key={alimento.id}
               className="block p-6 w-full bg-sz-gray rounded-lg shadow-md hover:bg-sz-secondary"
             >
               <h5 className="mb-2 text-lg font-bold tracking-tight text-sz-white dark:text-sz-white">

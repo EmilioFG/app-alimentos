@@ -7,9 +7,7 @@ import {
 
 import { ToastContainer } from 'react-toastify';
 
-import { Home } from './components/home';
-import { Alimento } from './components/alimento';
-import { GridAlimentos } from './components/grid-alimentos';
+import { Home, Alimento, GridAlimentos } from './components';
 
 import 'react-toastify/dist/ReactToastify.css';
 
