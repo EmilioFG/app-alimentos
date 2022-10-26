@@ -1,4 +1,4 @@
 export * from './alimento';
-export * from './home';
-export * from './ui/notification';
+export * from './dashboard';
+export * from './ui';
 export * from './grid-alimentos';

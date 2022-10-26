@@ -19,3 +19,17 @@ export const saveIngesta = async (body) => {
     throw error;
   }
 }
+
+export const getIngestaByUsuario = async (usuario) => {
+  try {
+    const { data } = await axios.get(
+      `${CONFIG.REACT_APP_API}/ingesta?usuario=${usuario}`,
+      CONFIG.PRIVATE_HEADERS
+    );
+
+    return data;
+  } catch (error) {
+    Notification(error.response.data.message, 'error');
+    throw error;
+  }
+}

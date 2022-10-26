@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { getAlimentos, getAlimentosByName, getAlimentoById } from '../api/alimentos';
+import { getAlimentos, getAlimentosByName, getAlimentoById } from '../api';
 
 
 

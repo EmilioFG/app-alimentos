@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { getTiposIngesta } from '../api/tiposingesta';
+import { getTiposIngesta } from '../api';
 
 
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { getPorciones } from '../api/porciones';
+import { getPorciones } from '../api';
 
 
 
