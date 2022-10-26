@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import { useAlimentos } from '../hooks/useAlimentos';
+import { useAlimentos } from '../hooks';
+
+import { CardAlimento } from './alimento/card';
 
 
 export const GridAlimentos = () => {
@@ -41,16 +43,7 @@ export const GridAlimentos = () => {
             to={{ pathname: `/alimento/${alimento.id}` }}
             key={alimento.id}
           >
-            <div
-              className="block p-6 w-full bg-sz-gray rounded-lg shadow-md hover:bg-sz-secondary"
-            >
-              <h5 className="mb-2 text-lg font-bold tracking-tight text-sz-white dark:text-sz-white">
-                {alimento.nombre} - {alimento.descripcion}
-              </h5>
-              <p className="text-sz-primary font-bold">
-                {alimento.calorias} kcal
-              </p>
-            </div>
+            <CardAlimento {...alimento} />
           </Link>
         ))}
       </div>

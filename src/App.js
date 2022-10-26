@@ -7,7 +7,7 @@ import {
 
 import { ToastContainer } from 'react-toastify';
 
-import { Home, Alimento, GridAlimentos } from './components';
+import { Dashboard, Alimento, GridAlimentos } from './components';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -20,7 +20,7 @@ function App() {
           <Route
             exact
             path="/"
-            element={<Home />}
+            element={<Dashboard />}
           />
           <Route
             exact
