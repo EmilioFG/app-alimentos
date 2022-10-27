@@ -18,7 +18,7 @@ code {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--white) !important;
+  /* color: var(--white) !important; */
   opacity: 1;
   /* Firefox */
 }

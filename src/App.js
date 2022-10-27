@@ -2,12 +2,12 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
 } from 'react-router-dom';
 
 import { ToastContainer } from 'react-toastify';
 
-import { Dashboard, Alimento, GridAlimentos } from './components';
+import { Dashboard, Alimento, GridAlimentos, Login, SignIn, ForgotPassword } from './components';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -31,6 +31,21 @@ function App() {
             exact
             path="/alimentos"
             element={<GridAlimentos />}
+          />
+          <Route
+            exact
+            path="/login"
+            element={<Login />}
+          />
+          <Route
+            exact
+            path="/sign-in"
+            element={<SignIn />}
+          />
+          <Route
+            exact
+            path="/forgot-password"
+            element={<ForgotPassword />}
           />
           <Route
             path="*"

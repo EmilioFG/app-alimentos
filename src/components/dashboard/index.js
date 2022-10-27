@@ -1,6 +1,6 @@
-import { Calorias } from './calorias';
-import { Graficas } from './graficas';
-import { Alimentos } from './alimentos';
+import { Calorias } from './Calorias';
+import { Graficas } from './Graficas';
+import { Alimentos } from './Alimentos';
 
 export const Dashboard = () => {
   return (
