@@ -6,7 +6,6 @@ import { usePorciones, useTiposIngesta, useForm, useIngestas } from '../../hooks
 export const FormAlimento = ({ id }) => {
 
   const initialStateForm = {
-    usuario: 'milo',
     cantidad: 1,
     porcion: 1,
     tipoIngesta: 1,

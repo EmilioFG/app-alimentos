@@ -35,6 +35,11 @@ function App() {
                   path="/login"
                   element={<Login />}
                 />
+                <Route
+                  exact
+                  path="/signin"
+                  element={<SignIn />}
+                />
               </>
             ) : (
               <>
