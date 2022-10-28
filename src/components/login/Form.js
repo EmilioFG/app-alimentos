@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import { useUsuarios } from '../../hooks';
 
 import { Field } from '../forms';
-import { validationSchema } from './ValidationSchema';
+import { validationSchema } from './validationSchema';
 
 
 export const FormLogin = () => {

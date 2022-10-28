@@ -5,7 +5,7 @@ import { useUsuarios } from '../../hooks';
 
 import { Notification } from '../ui';
 import { Field } from '../forms';
-import { validationSchema } from './ValidationSchema';
+import { validationSchema } from './validationSchema';
 
 
 export const FormSingIn = () => {

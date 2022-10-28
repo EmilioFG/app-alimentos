@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { FormSingIn } from './Form';
+import { FormSingIn } from './form';
 
 
 export const SignIn = () => {
