@@ -20,7 +20,7 @@ export const FormLogin = () => {
   const onSubmit = async (values) => {
     await logInUsuario(values);
     history('/')
-    window.location.reload(true)
+    window.location.reload(true);
   }
 
   const {

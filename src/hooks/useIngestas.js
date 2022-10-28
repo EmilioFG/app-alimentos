@@ -3,15 +3,15 @@ import { useEffect, useState } from 'react';
 import { saveIngesta, getIngestaByUsuario } from '../api';
 
 
-export const useIngestas = (usuario) => {
+export const useIngestas = () => {
   const [ingestas, setIngestas] = useState([]);
   const [informacionCalorica, setInformacionCalorica] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
 
   useEffect(() => {
-    usuario && getByUsuario(usuario);
-  }, [usuario]);
+    getByUsuario();
+  }, []);
 
   const save = async (ingesta) => {
     await saveIngesta(ingesta);

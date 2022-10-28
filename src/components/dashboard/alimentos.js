@@ -7,7 +7,7 @@ import { CardAlimento } from '../alimento/card';
 
 export const Alimentos = () => {
 
-  const { ingestas } = useIngestas('milo');
+  const { ingestas } = useIngestas();
 
 
   return (
