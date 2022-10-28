@@ -1,29 +1,16 @@
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
-import { useAlimentos, useIngestas } from '../../hooks';
+import { useAlimentos } from '../../hooks';
 
-import { InfoAlimento } from './info';
-import { FormAlimento } from './form';
+import { InfoAlimento } from './Info';
+import { FormAlimento } from './Form';
 
 
 
-export const Alimento = (props) => {
+export const Alimento = () => {
 
   const params = useParams();
-  const history = useNavigate();
-
   const { alimento } = useAlimentos(params?.id || null);
-  const { save } = useIngestas();
-
-
-  const handleSubmit = async (e) => {
-    const payload = {
-      ...e,
-      alimento: params.id,
-    };
-    await save(payload);
-    history('/');
-  }
 
 
   return (
@@ -35,7 +22,7 @@ export const Alimento = (props) => {
       </Link>
       {alimento && <div className="p-4 text-center">
         <InfoAlimento {...alimento} />
-        <FormAlimento handleSubmit={handleSubmit} />
+        <FormAlimento id={params?.id}/>
       </div>}
     </section>
   )

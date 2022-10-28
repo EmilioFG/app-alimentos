@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { useAlimentos } from '../hooks';
 
-import { CardAlimento } from './alimento/card';
+import { CardAlimento } from './alimento/Card';
 
 
 export const GridAlimentos = () => {
