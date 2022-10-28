@@ -153,7 +153,7 @@ export const FormSingIn = () => {
           </select>
         </div>
       </div>
-      <div className={`absolute bottom-[-5px] right-[0] left-[0] text-center`}>
+      <div className="flex justify-center mt-4">
         <button
           type="submit"
           disabled={isSubmitting}

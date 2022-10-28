@@ -3,5 +3,5 @@ export * from './dashboard';
 export * from './ui';
 export * from './GridAlimentos';
 export * from './login';
-export * from './sign-in';
+export * from './signin';
 export * from './forgot-password';
