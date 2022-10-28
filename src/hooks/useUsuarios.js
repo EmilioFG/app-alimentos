@@ -22,5 +22,6 @@ export const useUsuarios = () => {
   return {
     isLoading,
     logInUsuario,
+    singInUsuario,
   }
 }

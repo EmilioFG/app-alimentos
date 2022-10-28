@@ -30,6 +30,7 @@ export const FormSingIn = () => {
 
     await singInUsuario(values);
     history('/login');
+    window.location.reload(true);
   }
 
   const {
