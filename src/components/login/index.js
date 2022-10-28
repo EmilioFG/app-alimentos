@@ -1,4 +1,4 @@
-import { FormLogin } from './Form';
+import { FormLogin } from './form';
 
 
 export const Login = () => {

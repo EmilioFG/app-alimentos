@@ -2,8 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 
 import { useAlimentos } from '../../hooks';
 
-import { InfoAlimento } from './Info';
-import { FormAlimento } from './Form';
+import { InfoAlimento } from './info';
+import { FormAlimento } from './form';
 
 
 
