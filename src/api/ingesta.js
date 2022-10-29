@@ -20,10 +20,10 @@ export const saveIngesta = async (body) => {
   }
 }
 
-export const getIngestaByUsuario = async (usuario) => {
+export const getIngestaByUsuario = async () => {
   try {
     const { data } = await axios.get(
-      `${CONFIG.REACT_APP_API}/ingesta?usuario=${usuario}`,
+      `${CONFIG.REACT_APP_API}/ingesta`,
       CONFIG.PRIVATE_HEADERS
     );
 
