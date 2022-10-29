@@ -18,8 +18,9 @@ export const useIngestas = () => {
     setIsLoading(false);
   }
 
-  const getByUsuario = async (usuario) => {
-    const response = await getIngestaByUsuario(usuario);
+  const getByUsuario = async () => {
+    const response = await getIngestaByUsuario();
+
     setIngestas(response.ingesta || []);
     setInformacionCalorica(response.informacionCalorica);
     setIsLoading(false);
