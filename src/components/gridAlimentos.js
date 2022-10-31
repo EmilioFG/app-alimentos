@@ -20,7 +20,7 @@ export const GridAlimentos = () => {
         <div className="flex absolute inset-y-0 left-0 items-center pl-7 pointer-events-none">
           <svg
             aria-hidden="true"
-            className="w-5 h-5 text-sz-white dark:text-sz-white"
+            className="w-5 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ export const GridAlimentos = () => {
         <input
           type="search"
           id="default-search"
-          className="block p-4 pl-10 w-full text-sm text-sz-white dark:text-sz-white bg-sz-gray rounded-lg border border-sz-gray active:bg-sz-gray"
+          className="block p-4 pl-10 w-full text-sm text-sz-black dark:text-sz-black bg-sz-ligth-green rounded-lg"
           placeholder="Buscar Producto"
           onChange={handleSearchProduct}
         />
