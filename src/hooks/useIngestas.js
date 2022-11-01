@@ -18,8 +18,8 @@ export const useIngestas = () => {
     setIsLoading(false);
   }
 
-  const getByUsuario = async () => {
-    const response = await getIngestaByUsuario();
+  const getByUsuario = async (fecha) => {
+    const response = await getIngestaByUsuario(fecha);
 
     setIngestas(response.ingesta || []);
     setInformacionCalorica(response.informacionCalorica);
@@ -32,5 +32,6 @@ export const useIngestas = () => {
     informacionCalorica,
     isLoading,
     save,
+    getByUsuario,
   }
 }
