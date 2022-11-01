@@ -6,14 +6,14 @@
 .root,
 #root,
 #docs-root {
-  --primary: #2B8C44;
+  --primary: #107329;
   --secondary: #012611;
-  --green: #107329;
-  --ligth-green: #A8BFAA;
+  --green: #92d36e;
+  --ligth-green: #a8bfaa7e;
   --red: #8C0813;
-  --ligth-red: #d32937;
-  --blue: #023E73;
-  --yellow: #F2BC1B;
+  --ligth-red: #f85f6a;
+  --blue: #5f6af8;
+  --yellow: #ffb05a;
   --dark: #070606;
   --white: #F2F2F2;
   --transparent: rgba(0, 0, 0, 0.1);

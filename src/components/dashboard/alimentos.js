@@ -1,15 +1,9 @@
 import { Link } from 'react-router-dom';
 
-import { useIngestas } from '../../hooks';
-
 import { CardAlimento } from '../alimento/card';
 
 
-export const Alimentos = () => {
-
-  const { ingestas } = useIngestas();
-
-
+export const Alimentos = ({ ingestas = []}) => {
   return (
     <>
       {!ingestas.length && (
