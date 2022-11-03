@@ -34,7 +34,7 @@ export const Dashboard = () => {
         handleChange={handleChange}
         informacionCalorica={informacionCalorica}
       />
-      <Graficas />
+      <Graficas {...informacionCalorica} />
       <Alimentos ingestas={ingestas} />
     </section>
   )
