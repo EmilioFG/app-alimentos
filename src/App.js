@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
-import { Dashboard, Alimento, GridAlimentos, Login, SignIn, ForgotPassword } from './components';
+import { Dashboard, Alimento, GridAlimentos, Login, SignIn, Reportes } from './components';
 
 import CONFIG from './config';
 
@@ -70,8 +70,8 @@ function App() {
                 />
                 <Route
                   exact
-                  path="/forgot-password"
-                  element={<ForgotPassword />}
+                  path="/reportes"
+                  element={<Reportes />}
                 />
                 <Route
                   path="*"
