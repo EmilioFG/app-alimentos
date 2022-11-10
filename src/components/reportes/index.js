@@ -56,22 +56,22 @@ export const Reportes = () => {
           color="#107329"
         />
         <BarChart
-          titleChart="Calorías Consumidas"
-          labelDataset="Calorías"
+          titleChart="Carbohidratos Consumidas"
+          labelDataset="Carbohidratos"
           labels={labels}
           dataDatasets={carbohidratos}
           color="#012611"
         />
         <BarChart
-          titleChart="Calorías Consumidas"
-          labelDataset="Calorías"
+          titleChart="Proteinas Consumidas"
+          labelDataset="Proteinas"
           labels={labels}
           dataDatasets={proteinas}
           color="#ffb05a"
         />
         <BarChart
-          titleChart="Calorías Consumidas"
-          labelDataset="Calorías"
+          titleChart="Grasas Consumidas"
+          labelDataset="Grasas"
           labels={labels}
           dataDatasets={grasas}
           color="#8C0813"
