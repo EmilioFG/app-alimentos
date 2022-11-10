@@ -4,4 +4,4 @@ export * from './ui';
 export * from './gridAlimentos';
 export * from './login';
 export * from './signin';
-export * from './forgot-password';
+export * from './reportes';
